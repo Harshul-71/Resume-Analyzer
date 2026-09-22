@@ -1,0 +1,124 @@
+.applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.application-card {
+    padding: 1.5rem 2rem;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.app-job-info h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #2d3748;
+}
+
+.app-company {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.status-pill {
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-pending {
+    background: #fefcbf;
+    color: #975a16;
+}
+
+.status-shortlisted {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.status-rejected {
+    background: #fed7d7;
+    color: #9b2c2c;
+}
+
+.app-details {
+    display: flex;
+    gap: 2rem;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.app-details p {
+    margin: 0;
+}
+
+/* New status pills for recruitment workflow */
+.status-interview-scheduled {
+    background: #bee3f8;
+    color: #2b6cb0;
+}
+
+.status-selected {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+/* Interview details panel shown on candidate's application card */
+.interview-info-panel {
+    background: #ebf8ff;
+    border: 1px solid #bee3f8;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+}
+
+.interview-panel-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin: 0 0 0.75rem 0;
+}
+
+.interview-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+}
+
+.interview-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.interview-info-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.info-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.info-value {
+    font-size: 0.95rem;
+    color: #2d3748;
+}
+
+.interview-link {
+    color: #3182ce;
+    word-break: break-all;
+}

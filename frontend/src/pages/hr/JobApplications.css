@@ -1,0 +1,78 @@
+.hr-applications-container {
+    padding: 2rem;
+}
+
+.applicants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.applicant-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.applicant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.applicant-header h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #2d3748;
+}
+
+.btn-ai {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1;
+}
+
+.btn-ai:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.btn-ai:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #cbd5e0;
+    color: #4a5568;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex: 1;
+}
+
+.btn-outline:hover {
+    background: #edf2f7;
+}
+
+.applicant-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Recruitment status pill colours */
+.status-pending       { background: #fff3cd; color: #856404; }
+.status-shortlisted   { background: #cfe2ff; color: #084298; }
+.status-interview     { background: #d1ecf1; color: #0c5460; }
+.status-selected      { background: #d1e7dd; color: #0a3622; }
+.status-rejected      { background: #f8d7da; color: #842029; }

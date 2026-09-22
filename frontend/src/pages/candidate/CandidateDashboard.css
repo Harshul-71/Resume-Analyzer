@@ -1,0 +1,54 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card.success {
+    border-left-color: #48bb78;
+}
+
+.stat-card.danger {
+    border-left-color: #f56565;
+}
+
+.stat-card.pending {
+    border-left-color: #ecc94b;
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-number {
+    margin: 0.5rem 0 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.stat-card.interview {
+    border-left-color: #4299e1;
+}
+
+.stat-card.selected {
+    border-left-color: #38a169;
+}
